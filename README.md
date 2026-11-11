@@ -151,9 +151,3 @@ All processing happens locally. Camera frames, audio and file contents are never
 - Old `.doc` and `.ppt` files are not previewed. Save them as `.docx` and `.pptx`.
 - Voice recognition uses the small English Vosk model.
 - Gesture accuracy depends on lighting and camera position.
-
----
-
-## 📄 License
-
-Add your license here (for example MIT).
