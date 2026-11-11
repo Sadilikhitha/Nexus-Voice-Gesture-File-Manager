@@ -1,0 +1,1 @@
+{ "compilerOptions": { "target": "ES2022", "module": "CommonJS", "outDir": "../dist-electron", "strict": true, "skipLibCheck": true, "esModuleInterop": true }, "include": ["main.ts"] }

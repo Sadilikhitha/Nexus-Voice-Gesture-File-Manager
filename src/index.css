@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; overflow: hidden; }
+
+/* Air-click ripple */
+@keyframes nx-ripple { from { transform: translate(-50%,-50%) scale(.2); opacity: .9; }
+                       to   { transform: translate(-50%,-50%) scale(1);  opacity: 0; } }
+.nx-ripple { animation: nx-ripple .7s cubic-bezier(.2,.8,.2,1) forwards; }
+
+/* Wake-word listening ring */
+@keyframes nx-ring { 0%,100% { transform: scale(1); opacity: .55; } 50% { transform: scale(1.18); opacity: .15; } }
+.nx-ring { animation: nx-ring 1.6s ease-in-out infinite; }
+
+@keyframes nx-blob { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(40px,-30px) scale(1.15); } }
+.nx-blob { animation: nx-blob 18s ease-in-out infinite; }
+
+@keyframes nx-pop { from { transform: translateY(8px) scale(.97); opacity: 0; } to { transform: none; opacity: 1; } }
+.nx-pop { animation: nx-pop .25s ease-out both; }
+
+.glass { background: rgba(255,255,255,.08); backdrop-filter: blur(24px) saturate(160%);
+         border: 1px solid rgba(255,255,255,.16); box-shadow: 0 8px 32px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.12); }
